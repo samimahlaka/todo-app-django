@@ -1,9 +1,9 @@
 <th>
     {% if request.user.is_authenticated %}
         {{request.user}}
-        <a href="#">Logout</a>
+       
     {% else%}
-        <a href="#">Login</a>
+        <a href="{%url 'login' %}">Login</a>
     {% endif %}
 </th>
 

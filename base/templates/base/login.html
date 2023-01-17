@@ -1,0 +1,11 @@
+<h2>Login</h2>
+
+<form method="Post">
+    {% csrf_token %}
+
+    {{form.as_p}}
+
+    <input type="Submit", value = 'Login'/>
+
+
+</form>
